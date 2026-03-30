@@ -1,0 +1,14 @@
+Category,Level,PeakPriceResp_Pct,PricePeak_Month,PriceSig,PeakQuantityResp_Pct,QuantityPeak_Month,QuantitySig,PhillipsMultiplier,PM_CI_Lower,PM_CI_Upper
+Motor Vehicles and Parts,3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
+Housing and Utilities,3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
+Furnishings & Durable Equipment,3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
+Gasoline and Energy Goods,3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
+Food Services & Accommodations,3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
+Recreation Services,3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
+Transportation Services,3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
+Health Care,3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
+Food & Beverages (Off-Premises),3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
+Clothing and Footwear,3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
+Financial Services & Insurance,3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
+Recreational Goods & Vehicles,3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
+Other Services,3,NaN,NaN,,NaN,NaN,,NaN,NaN,NaN
