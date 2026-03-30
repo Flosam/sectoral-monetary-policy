@@ -22,17 +22,19 @@ This analysis examines the heterogeneous effects of monetary policy shocks acros
 **Figure**: `Data/Figures/Local_Projections/Aggregate PCE.png`
 
 **Price Response**:
-- Contractionary monetary policy shock leads to [PERSISTENT/TRANSITORY] decline in aggregate price level
-- Peak response occurs at approximately [XX] months
-- Statistical significance: [SIGNIFICANT/INSIGNIFICANT] at 95% confidence level
+- Contractionary monetary policy shock leads to **persistent** decline in aggregate price level
+- Peak response: **-3.37pp** at month 52 (95% CI: [-5.83, -0.92])
+- Statistical significance: **SIGNIFICANT** at 95% confidence level
+- Long and variable lag: effects build gradually over 4+ years
 
 **Quantity Response**:
-- Real consumption [INCREASES/DECREASES] following contractionary shock
-- Response pattern: [HUMP-SHAPED/MONOTONIC/U-SHAPED]
-- Persistence: [SHORT-LIVED (<12 months)/MEDIUM-TERM (12-24 months)/LONG-LASTING (>24 months)]
+- Real consumption **decreases** following contractionary shock
+- Peak response: **-4.37pp** at month 22 (95% CI: [-6.87, -1.87])
+- Response pattern: **HUMP-SHAPED** - peaks around 2 years, then gradually dissipates
+- Persistence: **LONG-LASTING** (>24 months) - statistically significant effects persist beyond 2 years
 
 **Interpretation**: 
-The aggregate response masks substantial heterogeneity across sectors, motivating our disaggregated analysis below.
+The aggregate response masks substantial heterogeneity across sectors, motivating our disaggregated analysis below. Both prices and quantities exhibit economically and statistically significant responses, with quantities reacting faster (peak at 22 months) than prices (peak at 52 months).
 
 ---
 
@@ -48,14 +50,29 @@ The aggregate response masks substantial heterogeneity across sectors, motivatin
 
 | Dimension | Goods | Services |
 |-----------|-------|----------|
-| **Price Response** | [LARGER/SMALLER] | [LARGER/SMALLER] |
-| **Quantity Response** | [LARGER/SMALLER] | [LARGER/SMALLER] |
-| **Statistical Significance** | [YES/NO] | [YES/NO] |
-| **Peak Impact (months)** | [XX] | [XX] |
+| **Price Response** | -5.09pp at month 52 | -2.53pp at month 54 |
+| **Quantity Response** | **+9.00pp** at month 52 | -3.11pp at month 30 |
+| **Statistical Significance** | YES (both) | YES (both) |
+| **Peak Impact (months)** | 52 (late) | 30-54 (varied) |
+
+**Key Finding - Puzzling Goods Quantity Response**:
+- **Goods**: Show a **counterintuitive positive quantity response** (+9.00pp, CI: [2.30, 15.71])
+  - This suggests goods consumption *increases* following contractionary policy
+  - Significant price decline (-5.09pp) concurrent with quantity increase
+  - May reflect composition effects or data quality issues in disaggregation
+  
+- **Services**: Exhibit expected negative quantity response (-3.11pp, CI: [-5.44, -0.77])
+  - Smaller but more persistent price decline (-2.53pp)
+  - Both price and quantity move in expected directions
+  - Peak quantity response occurs earlier (month 30) than price (month 54)
 
 **Interpretation**:
-- **Goods**: [Describe price stickiness, demand elasticity patterns]
-- **Services**: [Describe relative rigidity/flexibility, potential mechanisms]
+The goods quantity response is economically puzzling and warrants further investigation. Possible explanations:
+1. **Composition effects**: Level 1 aggregation may mask offsetting movements in durables vs. nondurables
+2. **Relative price effects**: Strong price declines in goods may induce substitution from services
+3. **Data issues**: Disaggregation methodology may introduce measurement error
+
+Services exhibit more intuitive responses with conventional monetary policy transmission.
 
 ---
 
@@ -65,15 +82,29 @@ The aggregate response masks substantial heterogeneity across sectors, motivatin
 
 **Figure**: `Data/Figures/Local_Projections/Lvl 2 - DurableGoods.png`
 
-**Price Response**: [DESCRIBE - magnitude, timing, significance]
+**Price Response**: 
+- Peak: **-4.45pp** at month 50 (95% CI: [-8.87, -0.02])
+- Marginally significant (CI barely excludes zero)
+- Similar magnitude to aggregate, but slower to peak
 
-**Quantity Response**: [DESCRIBE - magnitude, timing, significance]
+**Quantity Response**: 
+- Peak: **+19.27pp** at month 55 (95% CI: [6.52, 32.02])
+- **Highly significant** positive response
+- Largest magnitude among all major categories
 
 **Stylized Fact**: 
-Durable goods typically exhibit [HIGH/LOW] interest rate sensitivity due to [financing costs/inter-temporal substitution/both].
+Durable goods typically exhibit **HIGH** interest rate sensitivity due to **financing costs and inter-temporal substitution**.
 
 **Finding**: 
-Our results [CONFIRM/CONTRADICT] this conventional wisdom, showing [STRONG/WEAK] responses in [PRICES/QUANTITIES/BOTH].
+Our results **CONTRADICT** conventional wisdom. The **positive quantity response** is economically puzzling:
+- Standard theory predicts durables should *decline* most after contractionary policy (higher interest rates → reduced purchases of cars, appliances, etc.)
+- Instead, we observe the opposite: durables consumption **increases** significantly
+- This anomaly suggests either:
+  1. Data measurement issues in the disaggregation process
+  2. Complex general equilibrium effects not captured by partial equilibrium intuition  
+  3. Composition effects within the durable goods category
+
+**Critical Note**: This result requires further investigation before drawing policy conclusions.
 
 ---
 
@@ -81,14 +112,23 @@ Our results [CONFIRM/CONTRADICT] this conventional wisdom, showing [STRONG/WEAK]
 
 **Figure**: `Data/Figures/Local_Projections/Lvl 2 - NondurableGoods.png`
 
-**Price Response**: [DESCRIBE]
+**Price Response**: 
+- Peak: **-6.88pp** at month 52 (95% CI: [-12.28, -1.48])
+- **Largest price decline** among major categories
+- Highly significant and persistent
 
-**Quantity Response**: [DESCRIBE]
+**Quantity Response**: 
+- Peak: **+5.39pp** at month 52 (95% CI: [1.27, 9.51])
+- Significant positive response (though smaller than durables)
+- Also exhibits puzzling positive sign
 
 **Key Contrast with Durables**:
-- Price stickiness: [MORE/LESS] sticky than durables
-- Quantity adjustment: [FASTER/SLOWER] than durables
-- Policy implications: [DISCUSS]
+- Price stickiness: **LESS** sticky than durables (larger price response: -6.88pp vs -4.45pp)
+- Quantity adjustment: **SMALLER** magnitude than durables (5.39pp vs 19.27pp)
+- Policy implications: Both goods subcategories show puzzling positive quantity responses, but nondurables have stronger price adjustments, suggesting different price-setting mechanisms
+
+**Interpretation**: 
+The combination of large price declines and positive quantity responses in nondurables is inconsistent with standard demand theory, reinforcing concerns about the goods category results.
 
 ---
 
@@ -96,13 +136,31 @@ Our results [CONFIRM/CONTRADICT] this conventional wisdom, showing [STRONG/WEAK]
 
 **Figure**: `Data/Figures/Local_Projections/Lvl 2 - HouseholdConsumptionExpenditures_forServices_.png`
 
-**Price Response**: [DESCRIBE]
+**Price Response**: 
+- Peak: **-2.61pp** at month 54 (95% CI: [-4.71, -0.50])
+- Significant but smaller than goods categories
+- Very persistent effect (peaks at 4.5 years)
 
-**Quantity Response**: [DESCRIBE]
+**Quantity Response**: 
+- Peak: **-3.61pp** at month 13 (95% CI: [-5.91, -1.32])
+- Significant negative response (expected direction!)
+- Much faster adjustment than price (13 vs 54 months)
 
 **Service Sector Characteristics**:
-- Labor intensity implies [MORE/LESS] flexible prices
-- Non-tradability suggests [STRONGER/WEAKER] domestic demand effects
+- Labor intensity implies **LESS** flexible prices (wages are sticky)
+- Non-tradability suggests **STRONGER** domestic demand effects (no import competition buffer)
+
+**Key Finding**:
+Services exhibit the **most economically sensible** responses:
+- Both price and quantity decline (expected for contractionary policy)
+- Quantities adjust faster than prices (consistent with price stickiness)
+- Smaller magnitude than goods (consistent with lower interest sensitivity)
+
+**Note on NPISHs**: 
+The Level 2 also includes "Final Consumption Expenditures of NPISHs" (Non-Profit Institutions Serving Households), which shows:
+- Very large responses (price: -9.99pp, quantity: +16.90pp at month 13)
+- High uncertainty (wide confidence intervals)
+- This is a small, specialized category and results should be interpreted cautiously
 
 ---
 
@@ -119,12 +177,12 @@ This section highlights categories where the impulse response functions show **s
 **Figure**: `Data/Figures/Local_Projections/Lvl 3 - MotorVehiclesAndParts.png`
 
 **Statistical Significance**: 
-- Price: [YES/NO] - Significant for [XX] months
-- Quantity: [YES/NO] - Significant for [XX] months
+- Price: **NO** - CI includes zero (95% CI: [-9.00, 1.76])
+- Quantity: **YES** - Highly significant negative response
 
 **Economic Magnitude**:
-- Peak price effect: [X.XX]% at [XX] months
-- Peak quantity effect: [X.XX]% at [XX] months
+- Peak price effect: **-3.62pp** at month 45 (NOT significant)
+- Peak quantity effect: **-33.77pp** at month 2 (95% CI: [-53.76, -13.78]) - **HIGHLY significant**
 
 **Mechanism**:
 Motor vehicles are highly interest-sensitive due to:
@@ -132,7 +190,16 @@ Motor vehicles are highly interest-sensitive due to:
 2. Durable nature enabling inter-temporal substitution
 3. Inventory holdings by dealers
 
-**Finding**: [DESCRIBE YOUR SPECIFIC RESULTS]
+**Finding**: 
+Motor vehicles show the **expected and most dramatic quantity response** of any category:
+- Immediate, large decline in purchases (-33.77pp peaking at just 2 months)
+- This is consistent with consumer durables theory: when interest rates rise, auto purchases plunge
+- Price response is insignificant, possibly due to:
+  - Administered pricing by manufacturers
+  - Rebates and incentives that stabilize transaction prices
+  - Quality adjustments not fully captured in price indices
+
+**Key Insight**: This is the **only** major category showing strongly negative quantity responses as economic theory predicts for durables.
 
 ---
 
@@ -140,9 +207,13 @@ Motor vehicles are highly interest-sensitive due to:
 
 **Figure**: `Data/Figures/Local_Projections/Lvl 3 - HousingAndUtilities.png`
 
-**Statistical Significance**: [DESCRIBE]
+**Statistical Significance**: 
+- Price: **YES** - Significant throughout medium term
+- Quantity: **YES** - But shows positive response (puzzling)
 
-**Economic Magnitude**: [DESCRIBE]
+**Economic Magnitude**: 
+- Peak price effect: **-2.27pp** at month 54 (95% CI: [-3.49, -1.05])
+- Peak quantity effect: **+5.49pp** at month 56 (95% CI: [3.43, 7.55])
 
 **Mechanism**:
 Housing services represent the largest component of consumption (~15% of PCE) and directly link to:
@@ -150,7 +221,17 @@ Housing services represent the largest component of consumption (~15% of PCE) an
 - Rental equivalence pricing
 - Utility costs (energy sensitivity)
 
-**Finding**: [DESCRIBE]
+**Finding**: 
+Mixed results with important measurement considerations:
+- **Price**: Shows expected significant decline, very persistent (peaks at 4.5 years)
+  - Consistent with sticky housing rents and slow adjustment in owner-equivalent rent
+- **Quantity**: Counterintuitively *increases* following contractionary shock
+  - This likely reflects measurement issues with imputed housing services
+  - Rental equivalence methodology may not capture true consumption changes
+  - Alternatively, could reflect composition shifts (people staying in homes longer rather than moving)
+
+**Interpretation**: 
+The price response is credible and economically important given housing's large weight in PCE. The quantity response should be interpreted cautiously due to well-known measurement challenges in housing services.
 
 ---
 
@@ -158,11 +239,27 @@ Housing services represent the largest component of consumption (~15% of PCE) an
 
 **Figure**: `Data/Figures/Local_Projections/Lvl 3 - FurnishingsAndDurableHouseholdEquipment.png`
 
-**Statistical Significance**: [DESCRIBE]
+**Statistical Significance**: 
+- Price: **YES** - Significant in short-to-medium term
+- Quantity: **YES** - Significant negative response
 
-**Economic Magnitude**: [DESCRIBE]
+**Economic Magnitude**: 
+- Peak price effect: **-3.29pp** at month 12 (95% CI: [-5.69, -0.89])
+- Peak quantity effect: **-13.89pp** at month 27 (95% CI: [-23.79, -3.99])
 
-**Finding**: [DESCRIBE - connection to housing market, financing channel]
+**Finding**: 
+This category shows **theoretically consistent** responses:
+- Both price and quantity decline significantly
+- Quantity response is large (-13.89pp), consistent with interest-rate sensitive durables
+- Faster price adjustment than most categories (peak at 12 months)
+- Strong connection to housing market: furnishings purchases correlate with home buying/moving
+- Financing channel likely important: many consumers finance appliance purchases
+
+**Interpretation**: 
+Along with motor vehicles, household equipment is one of the few categories showing expected negative quantity responses. The magnitude is substantial but smaller than motor vehicles (-13.89pp vs -33.77pp), possibly because:
+- Lower unit prices → less financing dependence
+- Some items are necessities (replacing broken appliances)
+- Less inter-temporal substitutability than cars
 
 ---
 
@@ -170,9 +267,13 @@ Housing services represent the largest component of consumption (~15% of PCE) an
 
 **Figure**: `Data/Figures/Local_Projections/Lvl 3 - GasolineAndOtherEnergyGoods.png`
 
-**Statistical Significance**: [DESCRIBE]
+**Statistical Significance**: 
+- Price: **YES** - Extremely large and significant response
+- Quantity: **YES** - Significant positive response
 
-**Economic Magnitude**: [DESCRIBE]
+**Economic Magnitude**: 
+- Peak price effect: **-39.72pp** at month 52 (95% CI: [-76.24, -3.20])
+- Peak quantity effect: **+13.10pp** at month 56 (95% CI: [6.53, 19.67])
 
 **Mechanism**:
 Energy goods respond through:
@@ -180,7 +281,28 @@ Energy goods respond through:
 - Demand effects (consumption reduction)
 - Commodity market pass-through
 
-**Finding**: [DESCRIBE]
+**Finding**: 
+**Extreme and economically puzzling** results:
+- **Price**: Massive 40pp decline is implausibly large
+  - For context: this implies YoY gasoline price inflation drops by 40 percentage points
+  - This is an order of magnitude larger than any other category
+  - Likely reflects:
+    1. High volatility of energy prices creates large estimation uncertainty
+    2. Supply shocks (oil price shocks) may be correlated with monetary policy
+    3. Exchange rate effects amplify responses for imported commodities
+    
+- **Quantity**: Positive response contradicts demand theory
+  - Higher interest rates should reduce driving and energy consumption
+  - May reflect:
+    1. Composition effects within energy category
+    2. Complementarity with other goods whose consumption rises
+    3. Measurement error in chain-weighted indices
+
+**Interpretation**: 
+Energy goods results should be treated with **extreme caution**. The massive price swings and wrong-signed quantity response suggest this category is poorly suited to local projections analysis, possibly due to:
+- Confounding supply shocks (OPEC, geopolitical events)
+- Global commodity price dynamics not well-captured by domestic MPS
+- Data quality issues in disaggregated energy indices
 
 ---
 
@@ -190,12 +312,26 @@ Energy goods respond through:
 
 **Figure**: `Data/Figures/Local_Projections/Lvl 3 - FoodServicesAndAccommodations.png`
 
-**Statistical Significance**: [DESCRIBE]
+**Statistical Significance**: 
+- Price: **YES** - Significant negative response
+- Quantity: **YES** - Significant negative response
 
-**Economic Magnitude**: [DESCRIBE]
+**Economic Magnitude**: 
+- Peak price effect: **-2.06pp** at month 46 (95% CI: [-3.89, -0.22])
+- Peak quantity effect: **-7.32pp** at month 31 (95% CI: [-11.14, -3.50])
 
 **Interpretation**: 
-Food away from home is [MORE/LESS] discretionary than food at home, implying [STRONGER/WEAKER] income effects from monetary policy.
+**Economically sensible results** - one of the few categories with both responses in expected directions:
+- Food away from home is **MORE** discretionary than food at home, implying **STRONGER** income effects from monetary policy
+- Quantity response (-7.32pp) is meaningfully larger than price response (-2.06pp)
+  - Suggests elastic demand: consumers readily cut restaurant spending when income/wealth declines
+  - Consistent with "eating out" being a discretionary expense
+- Moderate price stickiness (peak at 46 months) reflects:
+  - Menu costs in restaurant pricing
+  - Wage stickiness (labor-intensive sector)
+  - But more flexible than housing or other services
+
+**Policy Implication**: Food services is a reliable indicator of household discretionary spending responses to monetary policy.
 
 ---
 
@@ -203,11 +339,26 @@ Food away from home is [MORE/LESS] discretionary than food at home, implying [ST
 
 **Figure**: `Data/Figures/Local_Projections/Lvl 3 - RecreationServices.png`
 
-**Statistical Significance**: [DESCRIBE]
+**Statistical Significance**: 
+- Price: **YES** - Marginally significant (CI barely excludes zero)
+- Quantity: **YES** - But shows positive response (puzzling)
 
-**Economic Magnitude**: [DESCRIBE]
+**Economic Magnitude**: 
+- Peak price effect: **-2.32pp** at month 51 (95% CI: [-4.50, -0.14])
+- Peak quantity effect: **+5.67pp** at month 60 (95% CI: [0.50, 10.83])
 
-**Interpretation**: [DISCUSS discretionary spending, income elasticity]
+**Interpretation**: 
+Mixed results for discretionary services:
+- Price declines as expected, though only marginally significant
+- Quantity response is positive and significant - economically puzzling for discretionary spending
+  - Standard theory: recreation is highly discretionary → should decline sharply with contractionary policy
+  - Possible explanations:
+    1. Composition effects: different types of recreation may respond differently
+    2. Relative price effects: as recreation becomes cheaper, substitution from other categories
+    3. Measurement issues in chain-weighted recreation indices
+- Very long lags (peak at 60 months = 5 years) suggest delayed adjustments
+
+**Note**: The positive quantity response undermines confidence in this category's results.
 
 ---
 
@@ -215,9 +366,26 @@ Food away from home is [MORE/LESS] discretionary than food at home, implying [ST
 
 **Figure**: `Data/Figures/Local_Projections/Lvl 3 - TransportationServices.png`
 
-**Statistical Significance**: [DESCRIBE]
+**Statistical Significance**: 
+- Price: **YES** - Significant negative response
+- Quantity: **YES** - But shows positive response
 
-**Economic Magnitude**: [DESCRIBE]
+**Economic Magnitude**: 
+- Peak price effect: **-5.18pp** at month 53 (95% CI: [-9.73, -0.62])
+- Peak quantity effect: **+11.02pp** at month 59 (95% CI: [2.54, 19.51])
+
+**Interpretation**:
+Transportation services (airfare, transit, ride-sharing) show:
+- Substantial price decline (-5.18pp) - larger than most service categories
+  - May reflect competitive pricing and commodity cost pass-through (fuel)
+- Positive quantity response (+11.02pp) - inconsistent with demand theory
+  - Transportation is complementary to other activities (work, leisure)
+  - Positive response may indicate:
+    1. Measurement issues with price deflators
+    2. Composition shifts (e.g., toward cheaper transport modes counted as higher "real" consumption)
+    3. Complementarity effects dominating substitution effects
+
+**Caution**: The sign reversal between price and quantity suggests identification or measurement problems in this category.
 
 ---
 
@@ -227,18 +395,32 @@ Food away from home is [MORE/LESS] discretionary than food at home, implying [ST
 
 **Figure**: `Data/Figures/Local_Projections/Lvl 3 - HealthCare.png`
 
-**Statistical Significance**: [TYPICALLY INSIGNIFICANT]
+**Statistical Significance**: 
+- Price: **NO** - Not statistically significant (CI includes zero)
+- Quantity: **YES** - Significant negative response
 
-**Economic Magnitude**: [SMALL]
+**Economic Magnitude**: 
+- Peak price effect: **-3.70pp** at month 58 (95% CI: [-8.61, 1.21]) - **NOT significant**
+- Peak quantity effect: **-4.54pp** at month 13 (95% CI: [-7.56, -1.53]) - **Significant**
 
 **Interpretation**:
 Health care consumption exhibits low monetary policy sensitivity due to:
-- Insurance coverage (third-party payment)
+- Insurance coverage (third-party payment insulates from price changes)
 - Low price elasticity (necessities)
 - Regulatory price setting
 - Aging demographics (inelastic demand)
 
-**Finding**: [CONFIRM/CONTRADICT] the hypothesis of monetary policy neutrality for health spending.
+**Finding**: Results **PARTIALLY CONFIRM** the hypothesis of monetary policy neutrality for health spending:
+- **Price**: Insignificant response supports the view that health prices are insulated from monetary policy
+  - Administered pricing (Medicare/Medicaid reimbursement rates)
+  - Insurance negotiations shield providers from demand fluctuations
+  
+- **Quantity**: Significant decline (-4.54pp) is somewhat surprising
+  - Suggests discretionary health spending (elective procedures, dental, vision) does respond to income effects
+  - Relatively fast response (peak at 13 months) indicates short-term postponement of non-urgent care
+  - Magnitude is modest compared to truly discretionary categories
+
+**Policy Insight**: While health prices are sticky/insulated, health *quantities* do respond modestly to monetary policy, likely through elective/discretionary components.
 
 ---
 
