@@ -19,7 +19,7 @@ This analysis examines the heterogeneous effects of monetary policy shocks acros
 
 ### 1.1 Aggregate PCE
 
-**Figure**: `Data/Figures/Local_Projections/Aggregate PCE.png`
+![Aggregate PCE](Data/Figures/Local_Projections/Aggregate%20PCE.png)
 
 **Price Response**:
 - Contractionary monetary policy shock leads to **persistent** decline in aggregate price level
@@ -42,9 +42,9 @@ The aggregate response masks substantial heterogeneity across sectors, motivatin
 
 ### 2.1 Goods vs. Services
 
-**Figures**: 
-- `Data/Figures/Local_Projections/Lvl 1 - Goods.png`
-- `Data/Figures/Local_Projections/Lvl 1 - Services.png`
+![Goods](Data/Figures/Local_Projections/Lvl%201%20-%20Goods.png)
+
+![Services](Data/Figures/Local_Projections/Lvl%201%20-%20Services.png)
 
 **Key Comparison**:
 
@@ -80,7 +80,7 @@ Services exhibit more intuitive responses with conventional monetary policy tran
 
 ### 3.1 Durable Goods
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 2 - DurableGoods.png`
+![Durable Goods](Data/Figures/Local_Projections/Lvl%202%20-%20DurableGoods.png)
 
 **Price Response**: 
 - Peak: **-4.45pp** at month 50 (95% CI: [-8.87, -0.02])
@@ -110,7 +110,7 @@ Our results **CONTRADICT** conventional wisdom. The **positive quantity response
 
 ### 3.2 Nondurable Goods
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 2 - NondurableGoods.png`
+![Nondurable Goods](Data/Figures/Local_Projections/Lvl%202%20-%20NondurableGoods.png)
 
 **Price Response**: 
 - Peak: **-6.88pp** at month 52 (95% CI: [-12.28, -1.48])
@@ -134,7 +134,7 @@ The combination of large price declines and positive quantity responses in nondu
 
 ### 3.3 Services Subcategories
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 2 - HouseholdConsumptionExpenditures_forServices_.png`
+![Household Services](Data/Figures/Local_Projections/Lvl%202%20-%20HouseholdConsumptionExpenditures_forServices_.png)
 
 **Price Response**: 
 - Peak: **-2.61pp** at month 54 (95% CI: [-4.71, -0.50])
@@ -174,7 +174,7 @@ This section highlights categories where the impulse response functions show **s
 
 #### 4.1.1 Motor Vehicles and Parts
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 3 - MotorVehiclesAndParts.png`
+![Motor Vehicles and Parts](Data/Figures/Local_Projections/Lvl%203%20-%20MotorVehiclesAndParts.png)
 
 **Statistical Significance**: 
 - Price: **NO** - CI includes zero (95% CI: [-9.00, 1.76])
@@ -205,7 +205,7 @@ Motor vehicles show the **expected and most dramatic quantity response** of any 
 
 #### 4.1.2 Housing and Utilities
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 3 - HousingAndUtilities.png`
+![Housing and Utilities](Data/Figures/Local_Projections/Lvl%203%20-%20HousingAndUtilities.png)
 
 **Statistical Significance**: 
 - Price: **YES** - Significant throughout medium term
@@ -237,7 +237,7 @@ The price response is credible and economically important given housing's large 
 
 #### 4.1.3 Durable Household Equipment
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 3 - FurnishingsAndDurableHouseholdEquipment.png`
+![Furnishings and Durable Household Equipment](Data/Figures/Local_Projections/Lvl%203%20-%20FurnishingsAndDurableHouseholdEquipment.png)
 
 **Statistical Significance**: 
 - Price: **YES** - Significant in short-to-medium term
@@ -265,7 +265,7 @@ Along with motor vehicles, household equipment is one of the few categories show
 
 #### 4.1.4 Gasoline and Energy Goods
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 3 - GasolineAndOtherEnergyGoods.png`
+![Gasoline and Other Energy Goods](Data/Figures/Local_Projections/Lvl%203%20-%20GasolineAndOtherEnergyGoods.png)
 
 **Statistical Significance**: 
 - Price: **YES** - Extremely large and significant response
@@ -310,7 +310,7 @@ Energy goods results should be treated with **extreme caution**. The massive pri
 
 #### 4.2.1 Food Services and Accommodations
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 3 - FoodServicesAndAccommodations.png`
+![Food Services and Accommodations](Data/Figures/Local_Projections/Lvl%203%20-%20FoodServicesAndAccommodations.png)
 
 **Statistical Significance**: 
 - Price: **YES** - Significant negative response
@@ -337,7 +337,7 @@ Energy goods results should be treated with **extreme caution**. The massive pri
 
 #### 4.2.2 Recreation Services
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 3 - RecreationServices.png`
+![Recreation Services](Data/Figures/Local_Projections/Lvl%203%20-%20RecreationServices.png)
 
 **Statistical Significance**: 
 - Price: **YES** - Marginally significant (CI barely excludes zero)
@@ -364,7 +364,7 @@ Mixed results for discretionary services:
 
 #### 4.2.3 Transportation Services
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 3 - TransportationServices.png`
+![Transportation Services](Data/Figures/Local_Projections/Lvl%203%20-%20TransportationServices.png)
 
 **Statistical Significance**: 
 - Price: **YES** - Significant negative response
@@ -393,7 +393,7 @@ Transportation services (airfare, transit, ride-sharing) show:
 
 #### 4.3.1 Health Care
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 3 - HealthCare.png`
+![Health Care](Data/Figures/Local_Projections/Lvl%203%20-%20HealthCare.png)
 
 **Statistical Significance**: 
 - Price: **NO** - Not statistically significant (CI includes zero)
@@ -426,7 +426,7 @@ Health care consumption exhibits low monetary policy sensitivity due to:
 
 #### 4.3.2 Clothing and Footwear
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 3 - ClothingAndFootwear.png`
+![Clothing and Footwear](Data/Figures/Local_Projections/Lvl%203%20-%20ClothingAndFootwear.png)
 
 **Statistical Significance**: 
 - Price: **NO** - Not statistically significant (CI includes zero)
@@ -450,7 +450,7 @@ Clothing and footwear shows mixed results:
 
 #### 4.3.3 Financial Services and Insurance
 
-**Figure**: `Data/Figures/Local_Projections/Lvl 3 - FinancialServicesAndInsurance.png`
+![Financial Services and Insurance](Data/Figures/Local_Projections/Lvl%203%20-%20FinancialServicesAndInsurance.png)
 
 **Statistical Significance**: 
 - Price: **NO** - Not statistically significant (CI includes zero)
