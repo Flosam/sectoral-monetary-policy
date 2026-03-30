@@ -1,0 +1,88 @@
+# MATLAB Files
+*.asv
+*.m~
+*.autosave
+
+# MATLAB Session Info
+octave-workspace
+
+# Compiled MEX files
+*.mex
+*.mexw64
+*.mexmaci64
+*.mexa64
+
+# Simulink
+*.slx.autosave
+*.slxc
+
+# Code Generation
+codegen/
+slprj/
+
+# Data Files (optional - uncomment if you want to exclude processed data)
+# Data/Processed/*.mat
+# Data/Figures/*.png
+# Data/Figures/*.fig
+
+# Operating System Files
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# Editor Files
+# VS Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Project Specific
+# Uncomment to exclude raw data if sensitive or large
+# Data/Raw/
+
+# Keep directory structure but ignore contents
+Data/Processed/.gitkeep
+Data/Figures/.gitkeep
