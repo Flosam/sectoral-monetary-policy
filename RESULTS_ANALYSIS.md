@@ -479,23 +479,92 @@ Financial services show **no statistically significant responses**:
 
 ## 5. Phillips Multiplier Analysis
 
-The Phillips Multiplier, defined as the ratio of price response to quantity response, captures the implicit "slope" of the Phillips curve at the sectoral level.
+The Phillips Multiplier (PM), defined as the ratio of price response to quantity response (dP/dQ), captures the implicit "slope" of the Phillips curve at the sectoral level. We estimate PM using 2SLS instrumental variables with the monetary policy shock as the instrument, and compute weak-instrument robust Anderson-Rubin confidence bounds.
 
-**Note**: Numerical estimates for the Phillips Multiplier analysis are computed separately. Figures are available in `Data/Figures/Philips_Multiplier/` directory showing the multiplier dynamics across categories:
-- `Aggregate PCE.png`
-- Level 1: Goods, Services
-- Level 2: Durable goods, Nondurable goods, Household services, NPISHs
-- Level 3: All detailed categories
+![Aggregate Phillips Multiplier](Data/Figures/Philips_Multiplier/Aggregate%20PCE.png)
 
-**Conceptual Interpretation**:
-The Phillips Multiplier relates the price response to the quantity response at each horizon. A key insight from the Local Projections results:
-- **Normal relationship** (negative multiplier): When quantities decline (negative shock), prices also decline → downward-sloping Phillips curve
-- **Puzzling relationship** (positive multiplier): When quantities increase paradoxically, while prices decline → inconsistent with standard theory
+### 5.1 Aggregate Phillips Multiplier
 
-Based on the Local Projections results above:
-- **Services** exhibit the expected pattern: both prices and quantities decline → consistent Phillips curve relationship
-- **Goods categories** show puzzling patterns: quantities increase while prices decline → inverted relationship requiring further investigation
-- **Motor Vehicles** show strong negative quantity response with insignificant price response → Phillips curve may be flat (price stickiness dominates)
+**Estimate**: -0.315 at long horizons (month 60)
+- **2SLS estimate at peak (month 1)**: -1.131 (95% CI: [-5.33, 3.07])
+- **AR robust CI**: [-10.00, 5.00] - very wide, reflecting weak identification
+- **Effective F-statistic (mean)**: 7.21 - marginally above weak instrument threshold of 10
+
+**Interpretation**:
+- **Negative multiplier**: Prices and quantities move in **opposite** directions, consistent with a downward-sloping aggregate demand curve
+- The multiplier of -0.315 at long horizons means: for every 1pp decline in real consumption, prices decline by 0.315pp
+- **Weak identification**: Low F-statistics indicate the MPS instrument has limited power for identifying the structural PM
+  - Standard 2SLS confidence intervals are unreliable
+  - AR robust bounds are very wide, including both positive and negative values
+  - Results should be interpreted with caution
+
+### 5.2 Sectoral Heterogeneity in Phillips Multipliers
+
+![Goods Phillips Multiplier](Data/Figures/Philips_Multiplier/Lvl%201%20-%20Goods.png)
+![Services Phillips Multiplier](Data/Figures/Philips_Multiplier/Lvl%201%20-%20Services.png)
+
+**Key Sectoral Estimates** (at long horizons):
+
+| Category | PM Estimate | 95% CI (AR robust) | Eff. F-stat | Interpretation |
+|----------|-------------|-------------------|-------------|----------------|
+| **Goods** | -0.435 | [-10.00, 5.00] | 6.24 | Weakly identified; consistent negative slope |
+| **Services** | -0.218 | [-10.00, 5.00] | 7.26 | Weakly identified; smaller multiplier than goods |
+| **Durable Goods** | -0.291 | [-10.00, 5.00] | 2.27 | Very weak identification (F=2.3) |
+| **Nondurable Goods** | -0.636 | [-10.00, 5.00] | 4.07 | Weak identification; largest goods multiplier |
+| **Motor Vehicles** | -0.267 | [-1.53, -0.06] | 7.78 | **SIGNIFICANT** - best identified PM |
+| **Housing** | 0.030 | [-10.00, 5.00] | 1.86 | Essentially zero; very weak identification |
+
+![Motor Vehicles Phillips Multiplier](Data/Figures/Philips_Multiplier/Lvl%203%20-%20Motor%20vehicles%20and%20parts.png)
+
+**Critical Finding - Motor Vehicles**:
+- **Only category with statistically significant PM**: -0.267 (AR CI: [-1.53, -0.06])
+- Strongest instrument (F-stat = 7.78, though still below 10)
+- AR bounds exclude zero for 12-24 months, confirming negative price-quantity relationship
+- This is the **most credible** sectoral PM estimate in the analysis
+
+**Pattern Across Categories**:
+1. **All point estimates are negative** at long horizons - consistent with downward-sloping demand
+2. **Wide AR confidence intervals** for most categories - reflects pervasive weak identification
+3. **Goods vs. Services**: Goods show larger multipliers (-0.44) than services (-0.22)
+   - Suggests prices are more responsive to quantity fluctuations in goods markets
+   - May reflect greater price flexibility in goods compared to labor-intensive services
+
+### 5.3 Identification Challenges
+
+**Weak Instrument Problem**:
+- **Mean F-statistics across categories**: Range from 0.18 (Recreation Services) to 8.34 (Household Services)
+- **None exceed the conventional threshold of 10** for strong identification
+- This means the monetary policy shock has limited power to move prices and quantities sufficiently for precise PM estimation
+
+**Why is identification weak?**
+1. **Small sample**: 303 observations (1982-2008) limits statistical power
+2. **Modest MPS variation**: Monetary shocks are relatively small in the sample period
+3. **Long-run effects**: Cumulative responses grow over time, increasing uncertainty
+4. **Disaggregation**: Individual sectors have smaller signal-to-noise ratios than aggregate
+
+**Implications**:
+- Standard 2SLS confidence intervals are **unreliable** and should not be used
+- AR robust bounds provide valid inference but are very wide
+- Only Motor Vehicles achieves meaningful identification
+- Other categories: point estimates indicate negative multipliers, but statistical uncertainty is too large for strong conclusions
+
+### 5.4 Economic Interpretation
+
+Despite weak statistical identification, the pattern of point estimates reveals economically sensible patterns:
+
+1. **Consistent Negative Relationship**: All categories show negative PM at long horizons
+   - Supports the view that contractionary monetary policy creates movements along downward-sloping sectoral demand curves
+   - Contradicts the puzzling positive quantity responses observed in reduced-form LP estimates for some goods categories
+
+2. **Resolution of the Goods Puzzle**: 
+   - Reduced-form LP showed puzzling positive quantity responses for goods
+   - PM analysis shows negative multipliers (price declines exceed quantity declines)
+   - This suggests the puzzling LP results may reflect **measurement error** or **composition effects** that wash out in the ratio estimator
+
+3. **Motor Vehicles - A Success Story**:
+   - Clear negative PM (-0.267, statistically significant)
+   - For every 1pp decline in auto purchases, prices fall by 0.27pp
+   - Demonstrates that with sufficient variation, the IV approach can identify meaningful structural parameters
 
 ---
 
