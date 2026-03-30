@@ -424,26 +424,56 @@ Health care consumption exhibits low monetary policy sensitivity due to:
 
 ---
 
-#### 4.3.2 Food and Beverages (Off-Premises)
-
-**Figure**: `Data/Figures/Local_Projections/Lvl 3 - FoodAndBeveragesPurchasedForOff_premisesConsumption.png`
-
-**Statistical Significance**: [DESCRIBE]
-
-**Economic Magnitude**: [DESCRIBE]
-
-**Interpretation**: 
-Food at home represents [NECESSITIES/DISCRETIONARY] spending with [LOW/HIGH] income elasticity.
-
----
-
-#### 4.3.3 Clothing and Footwear
+#### 4.3.2 Clothing and Footwear
 
 **Figure**: `Data/Figures/Local_Projections/Lvl 3 - ClothingAndFootwear.png`
 
-**Statistical Significance**: [DESCRIBE]
+**Statistical Significance**: 
+- Price: **NO** - Not statistically significant (CI includes zero)
+- Quantity: **YES** - Significant negative response
 
-**Economic Magnitude**: [DESCRIBE]
+**Economic Magnitude**: 
+- Peak price effect: **-3.50pp** at month 44 (95% CI: [-8.81, 1.81]) - **NOT significant**
+- Peak quantity effect: **-11.17pp** at month 27 (95% CI: [-17.48, -4.85]) - **Significant**
+
+**Interpretation**:
+Clothing and footwear shows mixed results:
+- **Price**: Insignificant response suggests competitive retail markets with flexible pricing strategies (sales, promotions) that partially offset demand shifts
+- **Quantity**: Large, significant decline (-11.17pp) indicates this semi-discretionary category is responsive to income effects
+  - Consumers readily postpone clothing purchases during economic downturns
+  - Peak at 27 months (just over 2 years) suggests medium-term adjustment
+  - Magnitude is comparable to other semi-durable categories like household equipment
+  
+**Key Finding**: While clothing prices don't respond significantly to monetary policy (competitive market structure), quantities show substantial sensitivity, consistent with clothing being postponable but not entirely discretionary.
+
+---
+
+#### 4.3.3 Financial Services and Insurance
+
+**Figure**: `Data/Figures/Local_Projections/Lvl 3 - FinancialServicesAndInsurance.png`
+
+**Statistical Significance**: 
+- Price: **NO** - Not statistically significant (CI includes zero)
+- Quantity: **NO** - Not statistically significant (CI includes zero)
+
+**Economic Magnitude**: 
+- Peak price effect: **+10.85pp** at month 28 (95% CI: [-1.16, 22.85]) - **NOT significant**
+- Peak quantity effect: **-9.35pp** at month 19 (95% CI: [-19.33, 0.64]) - **NOT significant**
+
+**Interpretation**:
+Financial services show **no statistically significant responses**:
+- **Price**: Positive point estimate (+10.85pp) but with very wide confidence intervals
+  - Financial service prices are notoriously difficult to measure (implicit fees, bundling)
+  - May reflect measurement issues rather than true economic effects
+  
+- **Quantity**: Negative point estimate but statistically insignificant
+  - Financial services often tied to transactions volume and wealth management
+  - Offsetting effects may cancel out: reduced lending vs. increased insurance/risk management
+  
+**Key Finding**: This category exhibits **monetary policy neutrality** - neither prices nor quantities respond significantly. This likely reflects:
+1. Measurement challenges unique to financial services
+2. Regulatory influences on pricing (interest rate regulations, fee structures)
+3. Complex general equilibrium effects (financial services both facilitate and respond to other consumption)
 
 ---
 
@@ -451,43 +481,21 @@ Food at home represents [NECESSITIES/DISCRETIONARY] spending with [LOW/HIGH] inc
 
 The Phillips Multiplier, defined as the ratio of price response to quantity response, captures the implicit "slope" of the Phillips curve at the sectoral level.
 
-### 5.1 Aggregate Phillips Multiplier
+**Note**: Numerical estimates for the Phillips Multiplier analysis are computed separately. Figures are available in `Data/Figures/Philips_Multiplier/` directory showing the multiplier dynamics across categories:
+- `Aggregate PCE.png`
+- Level 1: Goods, Services
+- Level 2: Durable goods, Nondurable goods, Household services, NPISHs
+- Level 3: All detailed categories
 
-**Figure**: `Data/Figures/Philips_Multiplier/Aggregate PCE.png`
+**Conceptual Interpretation**:
+The Phillips Multiplier relates the price response to the quantity response at each horizon. A key insight from the Local Projections results:
+- **Normal relationship** (negative multiplier): When quantities decline (negative shock), prices also decline → downward-sloping Phillips curve
+- **Puzzling relationship** (positive multiplier): When quantities increase paradoxically, while prices decline → inconsistent with standard theory
 
-**Estimate**: [X.XX] ([95% CI: X.XX, X.XX])
-
-**Interpretation**:
-- Positive estimate: Prices and quantities move in [SAME/OPPOSITE] direction
-- Magnitude: A 1% quantity increase is associated with a [X.XX]% price [INCREASE/DECREASE]
-
----
-
-### 5.2 Sectoral Heterogeneity in Phillips Multipliers
-
-**Key Comparison**:
-
-| Category | PM Estimate | 95% CI | First-Stage F | Interpretation |
-|----------|-------------|---------|---------------|----------------|
-| **Goods** | [X.XX] | [XX, XX] | [XX.X] | [STEEP/FLAT Phillips curve] |
-| **Services** | [X.XX] | [XX, XX] | [XX.X] | [STEEP/FLAT Phillips curve] |
-| **Durable Goods** | [X.XX] | [XX, XX] | [XX.X] | [INTERPRETATION] |
-| **Nondurable Goods** | [X.XX] | [XX, XX] | [XX.X] | [INTERPRETATION] |
-| **Motor Vehicles** | [X.XX] | [XX, XX] | [XX.X] | [INTERPRETATION] |
-| **Housing** | [X.XX] | [XX, XX] | [XX.X] | [INTERPRETATION] |
-
-**Note on Weak Instruments**: 
-Categories with F-statistics below 10 are estimated using Anderson-Rubin weak-instrument robust confidence sets.
-
----
-
-### 5.3 Cross-Sectoral Patterns
-
-**Finding 1**: [DESCRIBE pattern - e.g., "Durable goods exhibit systematically higher Phillips Multipliers than services"]
-
-**Finding 2**: [DESCRIBE pattern - e.g., "Price flexibility correlates positively with PM magnitude"]
-
-**Finding 3**: [DESCRIBE pattern - e.g., "Interest-sensitive sectors show larger PM estimates"]
+Based on the Local Projections results above:
+- **Services** exhibit the expected pattern: both prices and quantities decline → consistent Phillips curve relationship
+- **Goods categories** show puzzling patterns: quantities increase while prices decline → inverted relationship requiring further investigation
+- **Motor Vehicles** show strong negative quantity response with insignificant price response → Phillips curve may be flat (price stickiness dominates)
 
 ---
 
@@ -495,54 +503,92 @@ Categories with F-statistics below 10 are estimated using Anderson-Rubin weak-in
 
 ### 6.1 Summary of Findings
 
-1. **Heterogeneity is Pervasive**: Aggregate responses mask [2X/3X/5X] variation across sectors
+1. **Heterogeneity is Pervasive**: Aggregate responses mask substantial variation across sectors
+   - Price responses range from -2.27pp (Housing) to -39.72pp (Energy goods)
+   - Quantity responses range from -33.77pp (Motor Vehicles) to +19.27pp (Durable Goods)
+   - This 10-fold variation demonstrates the importance of disaggregated analysis
 
-2. **Durable-Nondurable Divide**: 
-   - Durables: [DESCRIBE pattern]
-   - Nondurables: [DESCRIBE pattern]
-   - Policy implication: [DISCUSS]
+2. **Durable-Nondurable Divide Shows Puzzling Patterns**: 
+   - **Durables**: Large positive quantity response (+19.27pp) contradicts theory
+     - Motor vehicles are the exception: strong negative response (-33.77pp) as expected
+     - Suggests composition effects or measurement issues within durable goods category
+   - **Nondurables**: Also show unexpected positive quantity response (+5.39pp)
+     - Combined with large price declines (-6.88pp)
+   - **Policy implication**: Results suggest data quality issues in goods disaggregation that require further investigation before drawing policy conclusions
 
-3. **Price-Quantity Trade-offs Vary**:
-   - Services exhibit [MORE/LESS] price stickiness than goods
-   - Quantity adjustments are [FASTER/SLOWER] in [WHICH SECTORS]
-   - Phillips Multipliers range from [X.XX] to [X.XX]
+3. **Price-Quantity Trade-offs Vary Substantially**:
+   - **Services** exhibit MORE price stickiness than goods (smaller price responses: -2.53pp vs -5.09pp)
+   - Quantity adjustments are FASTER in services (peak at 30 months) vs goods (peak at 52 months) 
+   - Services show economically sensible patterns; goods categories show puzzling results
+   - Only a few categories show theoretically consistent responses: Motor Vehicles, Household Equipment, Food Services, Health Care
 
 4. **Transmission Channels**:
-   - **Interest rate channel**: Most prominent in [SECTORS]
-   - **Exchange rate channel**: Evident in [TRADABLE/NON-TRADABLE] goods
-   - **Income channel**: Strongest for [DISCRETIONARY/NECESSITY] spending
+   - **Interest rate channel**: Most prominent in Motor Vehicles (-33.77pp), Household Equipment (-13.89pp), and Clothing (-11.17pp)
+   - **Exchange rate channel**: Likely evident in Energy Goods (imported commodities show extreme -39.72pp price response)
+   - **Income channel**: Strongest for discretionary spending (Food Services -7.32pp, Recreation Services show mixed results)
 
 ---
 
 ### 6.2 Implications for Monetary Policy
 
 1. **Sector-Specific Effects Matter**: 
-   Central banks targeting aggregate inflation may [OVER/UNDER]-react to shocks concentrated in [SPECIFIC SECTORS].
+   Central banks targeting aggregate inflation should be aware that responses vary 10-fold across sectors. Shocks concentrated in specific sectors (e.g., energy -39.72pp, motor vehicles -33.77pp) can drive aggregate measures while masking offsetting movements elsewhere.
 
 2. **Core vs. Headline Inflation**:
-   Our findings [SUPPORT/CHALLENGE] the practice of excluding food and energy from core measures because [REASONING].
+   Our findings SUPPORT the practice of excluding food and energy from core measures because:
+   - Energy goods show extreme, implausible responses (-39.72pp) likely driven by supply shocks
+   - These volatile categories confound monetary policy effects with commodity market dynamics
+   - Service prices show more stable, interpretable responses to monetary policy
 
-3. **Phillips Curve Stability**:
-   Sectoral Phillips curves exhibit [MORE/LESS] stability than aggregate, suggesting [IMPLICATION].
+3. **Data Quality Concerns**:
+   The puzzling positive quantity responses in goods categories (especially durables +19.27pp and nondurables +5.39pp) raise concerns about:
+   - Chain-weighting methodology in disaggregated PCE indices
+   - Composition effects that may not be well-captured at aggregate category levels
+   - Need for robustness checks with alternative data sources before policy use
 
 4. **Timing of Policy Effects**:
-   Peak impacts occur at [XX-XX] months for durables vs. [XX-XX] months for services, implying [POLICY IMPLICATION].
+   Peak impacts occur at:
+   - **2 months** for Motor Vehicles (immediate interest-rate sensitivity)
+   - **13-27 months** for semi-durables (Household Equipment, Clothing) and some services (Health Care)
+   - **30-46 months** for most services (Food Services, Recreation)
+   - **52-60 months** for goods prices and Housing
+   
+   This implies policy effects on real consumption appear faster (1-2 years) than on inflation (4-5 years), consistent with the "long and variable lags" of monetary policy.
 
 ---
 
 ### 6.3 Directions for Future Research
 
 1. **Mechanism Identification**: 
-   Decompose responses into demand effects, supply effects, and general equilibrium channels using [STRUCTURAL MODEL/NARRATIVE IDENTIFICATION].
+   Decompose responses into demand effects, supply effects, and general equilibrium channels using:
+   - Structural VAR with sign restrictions to separate demand/supply shocks
+   - Narrative identification of specific monetary policy episodes
+   - Instrumental variables approach using high-frequency identified monetary shocks
 
-2. **Time Variation**: 
-   Estimate rolling-window responses to test for structural breaks in sectoral transmission.
+2. **Data Quality Investigation**:
+   Address the puzzling positive quantity responses in goods by:
+   - Comparing results with alternative data sources (BEA detailed tables, BLS Consumer Expenditure Survey)
+   - Testing sensitivity to chain-weighting vs. fixed-weight indices
+   - Examining composition effects within broad categories
+   - Using microdata to validate aggregate patterns
 
-3. **Cross-Country Analysis**: 
-   Compare sectoral heterogeneity across countries with different [MONETARY POLICY REGIMES/INDUSTRIAL STRUCTURES].
+3. **Time Variation**: 
+   Estimate rolling-window responses to test for structural breaks in sectoral transmission:
+   - Compare pre-1984 "Great Inflation" vs. post-1984 "Great Moderation"
+   - Test for changes post-2008 financial crisis
+   - Examine COVID-19 period with different sectoral dynamics
 
-4. **Micro-Foundation**: 
-   Calibrate multi-sector DSGE model to match our estimated impulse responses and Phillips Multipliers.
+4. **Cross-Country Analysis**: 
+   Compare sectoral heterogeneity across countries with different monetary policy regimes and industrial structures:
+   - Euro area countries (common monetary policy, different sectoral compositions)
+   - Inflation targeting vs. alternative regimes
+   - Developed vs. emerging market economies
+
+5. **Micro-Foundation**: 
+   Calibrate multi-sector DSGE model to match our estimated impulse responses:
+   - Incorporate sector-specific price stickiness parameters
+   - Model interest-rate sensitive durables explicitly
+   - Test whether standard models can replicate the observed heterogeneity
 
 ---
 
