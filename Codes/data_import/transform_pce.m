@@ -25,13 +25,14 @@ function [pce_price_log, pce_quant_log, pce_price_gr, pce_quant_gr] = transform_
     
     % Compute year-over-year growth rates
     % Growth rate = (log(x_t) - log(x_{t-12})) * 100
+    % Note: log levels are already × 100, so difference gives growth rate in %
     pce_price_gr = pce_price_log;
     pce_quant_gr = pce_quant_log;
     
-    pce_price_gr.Variables = (pce_price_log.Variables - ...
-        lagmatrix(pce_price_log.Variables, 12)) .* 100;
-    pce_quant_gr.Variables = (pce_quant_log.Variables - ...
-        lagmatrix(pce_quant_log.Variables, 12)) .* 100;
+    pce_price_gr.Variables = pce_price_log.Variables - ...
+        lagmatrix(pce_price_log.Variables, 12);
+    pce_quant_gr.Variables = pce_quant_log.Variables - ...
+        lagmatrix(pce_quant_log.Variables, 12);
     
     fprintf('Computed log transformations and growth rates\n');
 end

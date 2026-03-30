@@ -23,22 +23,32 @@ load(mpsPath);
 mps_bs = tt_bs(:,1);
 mps_bs_ortho = tt_bs(:,2);
 
-%% run Philips Multiplier
-% Set some variables for every level
+%% Set common parameters
 mps         = mps_ad;
 save        = true;
 start_date  = config.DEFAULT_START_DATE;
 end_date    = config.DEFAULT_END_DATE;
-price = price_log_lvl;
-quant = quant_log_lvl;
-func = @get_lp;
-plot = @plot_lp;
 
-run_all(func,plot,price,quant,mps,start_date,end_date, save);
+%% Run Local Projections (using GROWTH RATES for stationarity)
+fprintf('\n=== Running Local Projections Analysis ===\n');
+fprintf('Using growth rates (stationary data)\n\n');
 
-%% run ad local projection
+price_lp = price_gr_lvl;  % Growth rates for LP
+quant_lp = quant_gr_lvl;  % Growth rates for LP
+func_lp = @get_lp;
+plot_lp_func = @plot_lp;
 
-p0 = get_lp(price_log_lvl{1},quant_log_lvl{1},mps_ad,'1982-01-01','2008-01-01');
-plot_lp(p0,'test',false);
+run_all(func_lp, plot_lp_func, price_lp, quant_lp, mps, start_date, end_date, save);
+
+%% Run Phillips Multiplier (using LOG LEVELS - ratio cancels non-stationarity)
+fprintf('\n=== Running Phillips Multiplier Analysis ===\n');
+fprintf('Using log levels (ratio estimator)\n\n');
+
+price_pm = price_log_lvl;  % Log levels for PM
+quant_pm = quant_log_lvl;  % Log levels for PM
+func_pm = @get_pm;
+plot_pm_func = @plot_irfs;
+
+run_all(func_pm, plot_pm_func, price_pm, quant_pm, mps, start_date, end_date, save);
 
 

@@ -1,0 +1,196 @@
+==========================================================
+LOCAL PROJECTIONS RESULTS SUMMARY
+==========================================================
+
+Sample: October 1982 - October 2008
+Horizon: 61 months (0-60)
+MPS: Aruoba & Drechsel (2022)
+
+----------------------------------------------------------
+L0_Aggregate
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -3.372pp at month 52
+  95% CI at peak: [-5.825, -0.918]
+
+QUANTITY RESPONSE:
+  Peak: -4.369pp at month 22
+  95% CI at peak: [-6.870, -1.868]
+
+----------------------------------------------------------
+L1_Goods
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -5.087pp at month 52
+  95% CI at peak: [-9.553, -0.621]
+
+QUANTITY RESPONSE:
+  Peak: +9.002pp at month 52
+  95% CI at peak: [2.299, 15.705]
+
+----------------------------------------------------------
+L1_Services
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -2.532pp at month 54
+  95% CI at peak: [-4.220, -0.844]
+
+QUANTITY RESPONSE:
+  Peak: -3.107pp at month 30
+  95% CI at peak: [-5.441, -0.772]
+
+----------------------------------------------------------
+L2_DurableGoods
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -4.445pp at month 50
+  95% CI at peak: [-8.874, -0.016]
+
+QUANTITY RESPONSE:
+  Peak: +19.271pp at month 55
+  95% CI at peak: [6.519, 32.024]
+
+----------------------------------------------------------
+L2_NondurableGoods
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -6.879pp at month 52
+  95% CI at peak: [-12.277, -1.481]
+
+QUANTITY RESPONSE:
+  Peak: +5.389pp at month 52
+  95% CI at peak: [1.268, 9.510]
+
+----------------------------------------------------------
+L2_HouseholdConsumptionExpenditures_forServices_
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -2.607pp at month 54
+  95% CI at peak: [-4.711, -0.503]
+
+QUANTITY RESPONSE:
+  Peak: -3.613pp at month 13
+  95% CI at peak: [-5.911, -1.315]
+
+----------------------------------------------------------
+L2_FinalConsumptionExpendituresOfNPISHs
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -9.986pp at month 13
+  95% CI at peak: [-17.686, -2.287]
+
+QUANTITY RESPONSE:
+  Peak: +16.902pp at month 13
+  95% CI at peak: [0.703, 33.102]
+
+----------------------------------------------------------
+L3_MotorVehiclesAndParts
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -3.620pp at month 45
+  95% CI at peak: [-9.000, 1.760]
+
+QUANTITY RESPONSE:
+  Peak: -33.770pp at month 2
+  95% CI at peak: [-53.761, -13.780]
+
+----------------------------------------------------------
+L3_HousingAndUtilities
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -2.268pp at month 54
+  95% CI at peak: [-3.485, -1.051]
+
+QUANTITY RESPONSE:
+  Peak: +5.490pp at month 56
+  95% CI at peak: [3.428, 7.553]
+
+----------------------------------------------------------
+L3_FurnishingsAndDurableHouseholdEquipment
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -3.290pp at month 12
+  95% CI at peak: [-5.690, -0.889]
+
+QUANTITY RESPONSE:
+  Peak: -13.886pp at month 27
+  95% CI at peak: [-23.786, -3.985]
+
+----------------------------------------------------------
+L3_GasolineAndOtherEnergyGoods
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -39.721pp at month 52
+  95% CI at peak: [-76.243, -3.198]
+
+QUANTITY RESPONSE:
+  Peak: +13.101pp at month 56
+  95% CI at peak: [6.528, 19.674]
+
+----------------------------------------------------------
+L3_FoodServicesAndAccommodations
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -2.055pp at month 46
+  95% CI at peak: [-3.888, -0.222]
+
+QUANTITY RESPONSE:
+  Peak: -7.318pp at month 31
+  95% CI at peak: [-11.139, -3.496]
+
+----------------------------------------------------------
+L3_HealthCare
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -3.699pp at month 58
+  95% CI at peak: [-8.606, 1.209]
+
+QUANTITY RESPONSE:
+  Peak: -4.541pp at month 13
+  95% CI at peak: [-7.555, -1.527]
+
+----------------------------------------------------------
+L3_TransportationServices
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -5.177pp at month 53
+  95% CI at peak: [-9.731, -0.622]
+
+QUANTITY RESPONSE:
+  Peak: +11.023pp at month 59
+  95% CI at peak: [2.541, 19.506]
+
+----------------------------------------------------------
+L3_RecreationServices
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -2.317pp at month 51
+  95% CI at peak: [-4.499, -0.135]
+
+QUANTITY RESPONSE:
+  Peak: +5.665pp at month 60
+  95% CI at peak: [0.501, 10.829]
+
+----------------------------------------------------------
+L3_ClothingAndFootwear
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: -3.501pp at month 44
+  95% CI at peak: [-8.809, 1.808]
+
+QUANTITY RESPONSE:
+  Peak: -11.167pp at month 27
+  95% CI at peak: [-17.484, -4.850]
+
+----------------------------------------------------------
+L3_FinancialServicesAndInsurance
+----------------------------------------------------------
+PRICE RESPONSE:
+  Peak: +10.850pp at month 28
+  95% CI at peak: [-1.155, 22.854]
+
+QUANTITY RESPONSE:
+  Peak: -9.345pp at month 19
+  95% CI at peak: [-19.325, 0.636]
+
+==========================================================
